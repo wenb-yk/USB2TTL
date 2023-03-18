@@ -1,0 +1,25 @@
+---- rx_len Matches (24 in 5 files) ----
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[0].rx_buff, user_param_uart[0].rx_len);
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[0].rx_len, CDC_IN_EP);
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[1].rx_buff, user_param_uart[1].rx_len);
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[1].rx_len, CDC_IN_EP1);
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[2].rx_buff, user_param_uart[2].rx_len);
+StartDefaultTask in freertos.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[2].rx_len, CDC_IN_EP2);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[0].rx_buff, user_param_uart[0].rx_len);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[0].rx_len, CDC_IN_EP);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[1].rx_buff, user_param_uart[1].rx_len);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[1].rx_len, CDC_IN_EP1);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		memcpy(UserTxBufferFS, user_param_uart[2].rx_buff, user_param_uart[2].rx_len);
+main in main.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		CDC_Transmit_FS(UserTxBufferFS, user_param_uart[2].rx_len, CDC_IN_EP2);
+USER_UART_PARAMETER in main.h (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Inc) : 	uint16_t 	rx_len;
+DMA1_Channel3_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) :   memset((void *)user_param_uart[2].rx_buff, 0, user_param_uart[2].rx_len);
+DMA1_Channel5_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) :   memset((void *)user_param_uart[0].rx_buff, 0, user_param_uart[0].rx_len);
+DMA1_Channel6_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) :   memset((void *)user_param_uart[1].rx_buff, 0, user_param_uart[1].rx_len);
+USART1_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 	  user_param_uart[0].rx_len = USER_UART_BUFF_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
+USART1_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : //	  memcpy(UserTxBufferFS, user_param_uart[0].rx_buff, user_param_uart[0].rx_len);
+USART2_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 		user_param_uart[1].rx_len = USER_UART_BUFF_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart2_rx);
+USART2_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) :   //	memcpy(UserTxBufferFS, user_param_uart[1].rx_buff, user_param_uart[1].rx_len);
+USART3_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : 	  user_param_uart[2].rx_len = USER_UART_BUFF_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart3_rx);
+USART3_IRQHandler in stm32f1xx_it.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\Core\Src) : //	  memcpy(UserTxBufferFS, user_param_uart[2].rx_buff, user_param_uart[2].rx_len);
+usbd_cdc_if.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\USB_DEVICE\App) line 383 : //		user_param_uart1.rx_len = USER_UART_BUFF_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
+usbd_cdc_if.c (C:\Users\cwb\Desktop\cwb\usbTottl\usb_virtualport\USB_DEVICE\App) line 384 : //		memcpy(UserTxBufferFS, user_param_uart1.rx_buff, user_param_uart1.rx_len);

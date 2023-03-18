@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetC1_2 Pin=RESET1-3
+Change Component Footprint: Designator=RESET1 Old Footprint=SW-SMD_4P-3*4*2.5 New Footprint=SW-SMD_2*4
+Change Component Comment : Designator=RESET1 Old Comment=TS-1089S-AR02516 New Comment=TACT 2P
+Change component parameters: Designator = "RESET1" ("RESET1"); Footprint = "SW-SMD_4P-3*4*2.5"; UniqueID = "\VKBNFHPI" ("\VKBNFHPI")
+Change component parameters (AddParameter): Name = "type"; Value = "TACT 2P"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "value"; Value = "3x4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC1_2 Pin=RESET1-2
